@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style>
+            section {
+                border: 1px solid blue;
+            }
+            p {
+                display: none;
+            }
+        </style>
+        <script
+          src="http://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+        <script>
+            
+         $(function(){ //like "main" in c
+             
+             
+             $(".showInfo").on("click",function(){
+                // $("p").hide(); //נפתח ולא נסגר
+                 $("p").not($(this).next()).hide(); //נפתח ונסגר
+                 $(this).next().toggle();
+                 
+             });
+         });
+            
+        </script>
+
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <section>
+        <button class="showInfo"> toggle more information</button>
+        <p>
+            Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements. .mousedown(). Bind an event handler to the “mousedown” JavaScript event, or trigger that event on an element. .mouseenter(). Bind an event handler to be fired when the mouse enters an element, ...
+        </p>
+        </section> 
+        <section>
+        <button class="showInfo"> toggle more information</button>
+        <p>
+            Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements. .mousedown(). Bind an event handler to the “mousedown” JavaScript event, or trigger that event on an element. .mouseenter(). Bind an event handler to be fired when the mouse enters an element, ...
+        </p>
+        </section>
+        <section>
+        <button class="showInfo"> toggle more information</button>
+        <p>
+            Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements. .mousedown(). Bind an event handler to the “mousedown” JavaScript event, or trigger that event on an element. .mouseenter(). Bind an event handler to be fired when the mouse enters an element, ...
+        </p>
+        </section>
+        <section>
+        <button class="showInfo"> toggle more information</button>
+        <p>
+            Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements. .mousedown(). Bind an event handler to the “mousedown” JavaScript event, or trigger that event on an element. .mouseenter(). Bind an event handler to be fired when the mouse enters an element, ...
+        </p>
+        </section>
+    </body>
+</html>
